@@ -1,0 +1,57 @@
+From f3dcc4434149877c697817285945584d5a63ea7e Mon Sep 17 00:00:00 2001
+From: Your Name <you@example.com>
+Date: Tue, 10 Feb 2026 23:34:05 +0000
+Subject: [PATCH] Resize header
+
+---
+ assets/css/screen.css | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/assets/css/screen.css b/assets/css/screen.css
+index 19993dd..85f63a7 100644
+--- a/assets/css/screen.css
++++ b/assets/css/screen.css
+@@ -113,14 +113,14 @@ production stylesheet in assets/built/screen.css
+     z-index: 100;
+     display: flex;
+     align-items: center;
+-    padding-top: calc(19vmin + 44px);
+-    padding-bottom: 19vmin;
++    padding-top: calc(3vmin + 44px);
++    padding-bottom: 3vmin;
+     text-align: center;
+     color: var(--color-darkgrey);
+ }
+ 
+ .has-cover .site-header-content {
+-    min-height: 560px;
++    min-height: 180px;
+     background-color: var(--ghost-accent-color);
+     color: #fff;
+ }
+@@ -232,19 +232,19 @@ production stylesheet in assets/built/screen.css
+ 
+ @media (min-width: 992px) {
+     .is-head-stacked.has-cover .site-header-content {
+-        padding-top: calc(19vmin + 120px);
++        padding-top: calc(3vmin + 120px);
+     }
+ }
+ 
+ @media (max-width: 991px) {
+     .site-header-content {
+-        padding-top: calc(19vmin + 32px);
++        padding-top: calc(3vmin + 32px);
+     }
+ }
+ 
+ @media (max-width: 767px) {
+     .has-cover .site-header-content {
+-        min-height: 240px;
++        min-height: 140px;
+     }
+     .site-header-inner {
+         gap: 16px;
+-- 
+2.47.3
+
